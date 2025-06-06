@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House Website with Tailwind CSS | Practice Work</title>
+    <meta name="description" content="A simple tea house website designed using Tailwind CSS for practice.">
+    <meta name="keywords" content="Tea House, Tailwind CSS, Practice Project, Responsive Design">
+    <meta name="author" content="Sourik Sarker Arjo">
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/ddf6670382.js" crossorigin="anonymous"></script>
+    <!-- tailwind css cdn -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <!-- Main Content -->
+    <main class="max-w-screen-xl mx-auto p-16 lg:p-28">
+
+        <!-- Header Section -->
+         <header class="flex pt-10 mb-20">
+            <!-- Text Content -->
+             <div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-[100px]">It's good <br>tea time at The <br>Tea House</h1>
+                <br>
+                <p class="text-gray-500 w-3/4 md:text-[18px]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <br>
+                <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 text-white rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition duration-300 ease-in-out">
+                    Explore More <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
+                </button>
+             </div>
+            <!-- Img Content -->
+             <div class="relative">
+                <!-- banner img -->
+                 <div>
+                    <img class="w-full" src="images/banner.png" alt="">
+                 </div>
+                 <!-- card -->
+                  <div class="flex items-center justify-center absolute bg-white shadow-lg rounded-lg p-5 top-28 md:top-80 md:left-32 lg:left-28">
+                    <!-- icon -->
+                     <div>
+                        <i class="fa-solid fa-star text-2xl text-amber-500"></i>
+                    </div>
+                    <!-- Text -->
+                     <div class="ml-3">
+                        <h3 class="text-2xl font-semibold">4.8</h3>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                     </div>
+                  </div>
+             </div>
+         </header>
+    </main>
+    
+</body>
+</html>
